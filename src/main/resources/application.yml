@@ -1,0 +1,7 @@
+info:
+  app:
+    name: zuulserver
+    description: Api entrypoint
+
+server:
+  port: 8765
