@@ -5,9 +5,19 @@ info:
 
 server:
   port: 8765
+
+---
+spring:
+    profiles: docker
   
 zuul:
   routes:
     catalog-search-service: /catalog/search/**
     catalog-metadata-service: /catalog/metadata/**
-  
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
