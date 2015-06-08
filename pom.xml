@@ -22,7 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>no.nb.microservices.ZuulApplication</start-class>
 		<java.version>1.8</java.version>
-        <docker.image.prefix>bjornadal</docker.image.prefix>
+        <docker.image.prefix>nb</docker.image.prefix>
 	</properties>
 
     <dependencyManagement>

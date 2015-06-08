@@ -5,3 +5,9 @@ info:
 
 server:
   port: 8765
+  
+zuul:
+  routes:
+    catalog-search-service: /catalog/search/**
+    catalog-metadata-service: /catalog/metadata/**
+  
