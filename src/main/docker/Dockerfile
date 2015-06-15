@@ -1,4 +1,4 @@
 FROM java:8
-ADD zuul-0.0.1-SNAPSHOT.jar app.jar
-EXPOSE 8080
+ADD zuul.jar app.jar
+EXPOSE 8765
 ENTRYPOINT ["java", "-Dspring.profiles.active=docker", "-jar", "app.jar"]
