@@ -1,8 +1,12 @@
 package no.nb.microservices.filters;
 
+import javax.servlet.http.HttpServletRequest;
+
 import no.nb.commons.web.util.UserUtils;
 
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
@@ -32,13 +36,21 @@ public class SsoFilter extends ZuulFilter {
     }
 
     private void addClientIpToRequest() {
+        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder
+                .currentRequestAttributes()).getRequest();
+
         RequestContext ctx = RequestContext.getCurrentContext();
-        ctx.addZuulRequestHeader(UserUtils.REAL_IP_HEADER, UserUtils.getClientIp());
+        
+        ctx.addZuulRequestHeader(UserUtils.REAL_IP_HEADER, UserUtils.getClientIp(request));
     }
 
     private void addAmssoToRequest() {
+        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder
+                .currentRequestAttributes()).getRequest();
+
         RequestContext ctx = RequestContext.getCurrentContext();
-        ctx.addZuulRequestHeader(UserUtils.SSO_HEADER, UserUtils.getSsoToken());
+
+        ctx.addZuulRequestHeader(UserUtils.SSO_HEADER, UserUtils.getSsoToken(request));
     }
 
     @Override
