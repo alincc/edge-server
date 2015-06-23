@@ -18,16 +18,12 @@ zuul:
     catalog-search-service: /catalog/search/**
     catalog-metadata-service: /catalog/metadata/**
     catalog-item-service: /catalog/items/**
+    catalog-iiif-presentation-service: /catalog/iiif/**
 
 ---
 spring:
     profiles: docker
   
-zuul:
-  routes:
-    catalog-search-service: /catalog/search/**
-    catalog-metadata-service: /catalog/metadata/**
-
 eureka:
   instance:
     preferIpAddress: true
