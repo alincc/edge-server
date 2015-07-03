@@ -40,6 +40,18 @@
     <dependencies>
 
         <dependency>
+            <groupId>no.nb.htrace</groupId>
+            <artifactId>htrace-impl-spring</artifactId>
+            <version>0.0.1-6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>no.nb.htrace</groupId>
+            <artifactId>htrace-zuul-filters</artifactId>
+            <version>0.0.1-6</version>
+        </dependency>
+
+        <dependency>
             <groupId>no.nb.commons</groupId>
             <artifactId>commons-web-utils</artifactId>
             <version>-12</version>
