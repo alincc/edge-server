@@ -3,6 +3,10 @@ info:
     name: zuulserver
     description: Api entrypoint
 
+spring:
+  application:
+    name: zuulserver
+    
 server:
   port: 8765
 
