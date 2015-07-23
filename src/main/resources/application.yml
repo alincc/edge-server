@@ -19,9 +19,13 @@ eureka:
 
 zuul:
   routes:
-    catalog-search-service: /catalog/search/**
+    catalog-search-service:
+        path: /catalog/search/**
+        stripPrefix: false
     catalog-metadata-service: /catalog/metadata/**
-    catalog-item-service: /catalog/items/**
+    catalog-item-service: 
+        path: /catalog/items/**
+        stripPrefix: false
     catalog-iiif-presentation-service: /catalog/iiif/**
 
 ---
