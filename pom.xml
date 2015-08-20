@@ -22,6 +22,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <start-class>no.nb.microservices.ZuulApplication</start-class>
         <docker.image.prefix>nb</docker.image.prefix>
+        <htrace-spring.version>0.0.1-48</htrace-spring.version>
     </properties>
 
     <dependencyManagement>
@@ -45,13 +46,13 @@
         <dependency>
             <groupId>no.nb.htrace</groupId>
             <artifactId>htrace-impl-spring</artifactId>
-            <version>0.0.1-34</version>
+            <version>${htrace-spring.version}</version>
         </dependency>
 
         <dependency>
             <groupId>no.nb.htrace</groupId>
             <artifactId>htrace-zuul-filters</artifactId>
-            <version>0.0.1-34</version>
+            <version>${htrace-spring.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
