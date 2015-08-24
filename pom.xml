@@ -22,7 +22,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <start-class>no.nb.microservices.ZuulApplication</start-class>
         <docker.image.prefix>nb</docker.image.prefix>
-        <htrace-spring.version>0.0.1-57</htrace-spring.version>
+        <htrace-spring.version>0.0.1-59</htrace-spring.version>
     </properties>
 
     <dependencyManagement>
@@ -64,7 +64,7 @@
         <dependency>
             <groupId>no.nb.commons</groupId>
             <artifactId>commons-web-utils</artifactId>
-            <version>-12</version>
+            <version>-15</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
