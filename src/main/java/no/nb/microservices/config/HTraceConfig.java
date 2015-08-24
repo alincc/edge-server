@@ -9,11 +9,13 @@ import org.springframework.context.annotation.Import;
 
 import no.nb.htrace.zuul.filters.HTraceZuulPostFilter;
 import no.nb.htrace.zuul.filters.HTraceZuulPreFilter;
+import no.nb.htrace.zuul.filters.HTraceCreateSamplePreFilter;
 
 @Configuration
 @Import(no.nb.htrace.config.HTraceConfig.class)
 public class HTraceConfig {
  
+    private static final int SAMPLE_RATE = 100;
     public String serviceName = "zuul";
     
     @PostConstruct
@@ -29,6 +31,11 @@ public class HTraceConfig {
     @Bean
     public HTraceZuulPostFilter htracePostFilter() {
         return new HTraceZuulPostFilter();
+    }
+
+    @Bean
+    public HTraceCreateSamplePreFilter createSamplePreFilter() {
+        return new HTraceCreateSamplePreFilter(SAMPLE_RATE);
     }
 
 }
