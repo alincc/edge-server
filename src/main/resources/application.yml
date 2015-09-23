@@ -28,9 +28,7 @@ zuul:
     catalog-item-service: 
         path: /catalog/items/**
         stripPrefix: false
-    catalog-delivery-service:
-        path: /delivery/**
-        stripPrefix: false
+    catalog-delivery-service: /delivery/**
     catalog-iiif-presentation-service: /catalog/iiif/**
 
 ---
