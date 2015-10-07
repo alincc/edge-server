@@ -33,6 +33,9 @@ zuul:
         path: /catalog/iiif/**
         stripPrefix: false
 
+zipkin:
+    collector-hostname: localhost
+
 ---
 spring:
     profiles: docker
