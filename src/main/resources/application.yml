@@ -32,6 +32,9 @@ zuul:
     catalog-iiif-presentation-service:
         path: /catalog/iiif/**
         stripPrefix: false
+    catalog-reference-service:
+        path: /catalog/reference/**
+        stripPrefix: false
 
 zipkin:
     collector-hostname: localhost
