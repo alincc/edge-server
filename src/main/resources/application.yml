@@ -38,6 +38,12 @@ zuul:
     catalog-recommend-service:
         path: /catalog/recommend/**
         stripPrefix: false
+    dewey-service:
+        path: /dewey/**
+        stripPrefix: false
+    user-service:
+        path: /user/**
+        stripPrefix: false
 
 zipkin:
     collector-hostname: localhost
