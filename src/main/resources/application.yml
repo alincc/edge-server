@@ -44,6 +44,12 @@ zuul:
     user-service:
         path: /user/**
         stripPrefix: false
+    catalog-typeahead-service:
+        path: /catalog/typeahead/**
+        stripPrefix: false
+    streaming-info-service:
+        path: /streaming/**
+        stripPrefix: false
 
 zipkin:
     collector-hostname: localhost
