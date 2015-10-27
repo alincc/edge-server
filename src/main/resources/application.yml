@@ -35,6 +35,9 @@ zuul:
     catalog-reference-service:
         path: /catalog/reference/**
         stripPrefix: false
+    catalog-recommend-service:
+        path: /catalog/recommend/**
+        stripPrefix: false
 
 zipkin:
     collector-hostname: localhost
