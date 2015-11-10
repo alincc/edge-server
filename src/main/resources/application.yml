@@ -44,6 +44,9 @@ zuul:
     catalog-recommend-service:
         path: /catalog/recommend/**
         stripPrefix: false
+    catalog-playlist-service:
+        path: /catalog/playlist/**
+        stripPrefix: false
     dewey-service:
         path: /dewey/**
         stripPrefix: false
