@@ -17,6 +17,12 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
+ribbon:
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 2
+  ConnectTimeout: 3000
+  ReadTimeout: 5000
+
 zuul:
   routes:
     catalog-search-service:
@@ -39,6 +45,9 @@ zuul:
         stripPrefix: false
     catalog-recommend-service:
         path: /catalog/recommend/**
+        stripPrefix: false
+    catalog-playlist-service:
+        path: /catalog/playlist/**
         stripPrefix: false
     dewey-service:
         path: /dewey/**
