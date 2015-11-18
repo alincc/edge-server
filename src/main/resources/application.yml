@@ -40,6 +40,9 @@ zuul:
     catalog-iiif-presentation-service:
         path: /catalog/iiif/**
         stripPrefix: false
+    catalog-iiif-content-search:
+        path: /catalog/contentsearch/**
+        stripPrefix: false
     catalog-reference-service:
         path: /catalog/reference/**
         stripPrefix: false
