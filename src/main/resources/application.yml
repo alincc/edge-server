@@ -64,6 +64,9 @@ zuul:
     streaming-info-service:
         path: /streaming/**
         stripPrefix: false
+    catalog-snippet-service:
+        path: /catalog/snippet/**
+        stripPrefix: false
 
 zipkin:
     collector-hostname: localhost
