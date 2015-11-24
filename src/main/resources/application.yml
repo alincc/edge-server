@@ -26,46 +26,46 @@ ribbon:
 zuul:
   routes:
     catalog-search-service:
-        path: /catalog/search/**
+        path: /v1/catalog/search/**
         stripPrefix: false
     catalog-metadata-service:
-        path: /catalog/metadata/**
+        path: /v1/catalog/metadata/**
         stripPrefix: false
     catalog-item-service: 
-        path: /catalog/items/**
+        path: /v1/catalog/items/**
         stripPrefix: false
     catalog-delivery-service:
-        path: /delivery/**
+        path: /v1/delivery/**
         stripPrefix: false
     catalog-iiif-presentation-service:
-        path: /catalog/iiif/**
+        path: /v1/catalog/iiif/**
         stripPrefix: false
     catalog-iiif-content-search:
-        path: /catalog/contentsearch/**
+        path: /v1/catalog/contentsearch/**
         stripPrefix: false
     catalog-reference-service:
-        path: /catalog/reference/**
+        path: /v1/catalog/reference/**
         stripPrefix: false
     catalog-recommend-service:
-        path: /catalog/recommend/**
+        path: /v1/catalog/recommend/**
         stripPrefix: false
     catalog-playlist-service:
-        path: /catalog/playlist/**
+        path: /v1/catalog/playlist/**
         stripPrefix: false
     dewey-service:
-        path: /dewey/**
+        path: /v1/dewey/**
         stripPrefix: false
     user-service:
-        path: /user/**
+        path: /v1/user/**
         stripPrefix: false
     catalog-typeahead-service:
-        path: /catalog/typeahead/**
+        path: /v1/catalog/typeahead/**
         stripPrefix: false
     streaming-info-service:
-        path: /streaming/**
+        path: /v1/streaming/**
         stripPrefix: false
     catalog-snippet-service:
-        path: /catalog/snippet/**
+        path: /v1/catalog/snippet/**
         stripPrefix: false
 
 zipkin:
