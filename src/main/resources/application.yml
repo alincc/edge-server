@@ -70,6 +70,9 @@ zuul:
     catalog-snippet-service:
         path: /v1/catalog/snippet/**
         stripPrefix: false
+    clickstream-service:
+        path: /v1/clickstream/**
+        stripPrefix: false
 
 zipkin:
     collector-hostname: localhost
