@@ -25,6 +25,9 @@ ribbon:
 
 zuul:
   routes:
+    iiif-image-api:
+        path: /services/image/**
+        url: http://www.nb.no/services/image
     catalog-search-service:
         path: /v1/catalog/search/**
         stripPrefix: false
