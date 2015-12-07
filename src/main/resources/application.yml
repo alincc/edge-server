@@ -59,7 +59,7 @@ zuul:
         path: /v1/dewey/**
         stripPrefix: false
     user-service:
-        path: /v1/user/**
+        path: /v1/me/**
         stripPrefix: false
     catalog-typeahead-service:
         path: /v1/catalog/typeahead/**
