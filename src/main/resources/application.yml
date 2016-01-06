@@ -49,8 +49,8 @@ zuul:
     catalog-reference-service:
         path: /v1/catalog/reference/**
         stripPrefix: false
-    catalog-recommend-service:
-        path: /v1/catalog/recommend/**
+    catalog-search-suggestion-service:
+        path: /v1/catalog/searchsuggestions/**
         stripPrefix: false
     catalog-playlist-service:
         path: /v1/catalog/playlist/**
