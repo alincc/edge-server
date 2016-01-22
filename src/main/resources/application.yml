@@ -32,46 +32,46 @@ zuul:
         path: /v1/catalog/search/**
         stripPrefix: false
     catalog-metadata-service:
-        path: /v1/catalog/metadata/**
+        path: /catalog/v1/metadata/**
         stripPrefix: false
     catalog-item-service: 
-        path: /v1/catalog/items/**
+        path: /catalog/v1/items/**
         stripPrefix: false
     catalog-delivery-service:
-        path: /v1/delivery/**
+        path: /catalog/v1/delivery/**
         stripPrefix: false
     catalog-iiif-presentation-service:
-        path: /v1/catalog/iiif/**
+        path: /catalog/v1/iiif/**
         stripPrefix: false
     catalog-iiif-content-search:
-        path: /v1/catalog/contentsearch/**
+        path: /catalog/v1/contentsearch/**
         stripPrefix: false
     catalog-reference-service:
-        path: /v1/catalog/reference/**
+        path: /catalog/v1/reference/**
         stripPrefix: false
     catalog-search-suggestion-service:
-        path: /v1/catalog/searchsuggestions/**
+        path: /catalog/v1/searchsuggestions/**
         stripPrefix: false
     catalog-playlist-service:
-        path: /v1/catalog/playlist/**
+        path: /catalog/v1/playlist/**
         stripPrefix: false
     dewey-service:
-        path: /v1/dewey/**
+        path: /dewey/v1/**
         stripPrefix: false
     user-service:
-        path: /v1/me/**
+        path: /me/v1/**
         stripPrefix: false
     catalog-typeahead-service:
-        path: /v1/catalog/typeahead/**
+        path: /catalog/v1/typeahead/**
         stripPrefix: false
     streaming-info-service:
-        path: /v1/streaming/**
+        path: /streaming/v1/**
         stripPrefix: false
     catalog-snippet-service:
-        path: /v1/catalog/snippet/**
+        path: /catalog/v1/snippet/**
         stripPrefix: false
     catalog-recommendation-service:
-        path: /v1/catalog/recommend/**
+        path: /catalog/v1/recommend/**
         stripPrefix: false
 
 zipkin:
