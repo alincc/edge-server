@@ -73,6 +73,9 @@ zuul:
     catalog-recommendation-service:
         path: /catalog/v1/recommend/**
         stripPrefix: false
+    insidesearch-playground:
+        path: /insidesearch-playground/**
+        stripPrefix: false
 
 zipkin:
     collector-hostname: localhost
