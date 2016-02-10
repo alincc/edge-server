@@ -28,14 +28,16 @@ zuul:
     iiif-image-api:
         path: /services/image/**
         url: http://www.nb.no/services/image
-    catalog-search-service:
-        path: /v1/catalog/search/**
-        stripPrefix: false
     catalog-metadata-service:
         path: /catalog/v1/metadata/**
         stripPrefix: false
-    catalog-item-service: 
+    catalog-item-service-items:
         path: /catalog/v1/items/**
+        serviceId: catalog-item-service
+        stripPrefix: false
+    catalog-item-service-search:
+        path: /catalog/v1/search/**
+        serviceId: catalog-item-service
         stripPrefix: false
     catalog-delivery-service:
         path: /catalog/v1/delivery/**
