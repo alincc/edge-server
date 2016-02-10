@@ -11,11 +11,6 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 
-/**
- * 
- * @author ronnymikalsen
- *
- */
 @Component
 public class SsoFilter extends ZuulFilter {
 

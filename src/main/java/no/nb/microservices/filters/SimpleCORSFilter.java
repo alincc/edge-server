@@ -5,11 +5,6 @@ import org.springframework.stereotype.Component;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 
-/**
- * 
- * @author ronnymikalsen
- *
- */
 @Component
 public class SimpleCORSFilter extends ZuulFilter {
 
