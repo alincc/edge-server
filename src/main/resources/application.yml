@@ -5,3 +5,10 @@ info:
 
 server:
   port: 8765
+  
+---
+spring:
+  profiles: local
+
+zipkin:
+    collector-hostname: 

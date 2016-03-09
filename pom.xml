@@ -23,7 +23,7 @@
         <start-class>no.nb.microservices.ZuulApplication</start-class>
         <docker.registry>registry.nb.no:5000</docker.registry>
         <docker.image.prefix>nb</docker.image.prefix>
-        <htrace-spring.version>0.0.1-59</htrace-spring.version>
+        <htrace-spring.version>0.0.1-63</htrace-spring.version>
     </properties>
 
     <dependencyManagement>
@@ -65,7 +65,7 @@
         <dependency>
             <groupId>no.nb.commons</groupId>
             <artifactId>commons-web-utils</artifactId>
-            <version>-15</version>
+            <version>0.0.1-SNAPSHOT</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
@@ -118,6 +118,10 @@
             </exclusions>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

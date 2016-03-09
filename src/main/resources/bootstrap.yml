@@ -1,11 +1,15 @@
 spring:
   application:
     name: zuulserver
+---
+
+spring:
+  profiles: local
   cloud:
     config:
-      failFast: false
       discovery:
-        enabled: true
+        enabled: false
+
 
 ---
 
@@ -14,6 +18,8 @@ spring:
   cloud:
     config:
       failFast: true
+      discovery:
+        enabled: true
 
 eureka:
   instance:
