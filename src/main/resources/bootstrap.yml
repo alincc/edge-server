@@ -1,15 +1,11 @@
 spring:
   application:
     name: zuulserver
----
-
-spring:
-  profiles: local
   cloud:
     config:
+      failFast: false
       discovery:
-        enabled: false
-
+        enabled: true
 
 ---
 
@@ -18,12 +14,10 @@ spring:
   cloud:
     config:
       failFast: true
-      discovery:
-        enabled: true
 
 eureka:
   instance:
     preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: ${SPRING_EUREKA_URI:http://discovery:8761/eureka/}
